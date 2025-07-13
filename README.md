@@ -42,3 +42,19 @@ This project implements a machine learning classifier to predict customer churn 
 - Identify the most reliable classifier for churn detection
 
 ## Folder Structure (Example)
+
+churn-prediction/
+├── data/
+│   └── churn.csv
+├── scripts/
+│   ├── churn_data_cleaning.py
+│   ├── logistic_regression.py
+│   ├── decision_tree.py
+│   └── random_forest.py
+├── main.py
+└── README.md
+
+## Goal
+
+The aim of this project was to develop a robust baseline model for business-relevant classification tasks using standard ML tools. 
+To improve code clarity and model reproducibility, structured **pipelines** and **GridSearchCV** were used.
