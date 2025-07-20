@@ -33,9 +33,8 @@ def run_churn_decisiontree():
               'TechSupport', 'StreamingTV', 'StreamingMovies']
     num_cols = ['SeniorCitizen', 'tenure', 'TotalCharges', 'MonthlyCharges']
 
-    #Apply scaling to numerical and one-hot encoding to categorical features
+    #Apply one-hot encoding to categorical features
     preprocessor = ColumnTransformer([
-        ('num', StandardScaler(), num_cols),
         ('cat', OneHotEncoder(handle_unknown='ignore'), cat_cols)
     ])
     #Combine preprocessing and model into a single pipeline
